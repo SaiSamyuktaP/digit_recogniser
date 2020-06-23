@@ -8,6 +8,10 @@ This project consists of a 4 layers Sequential Convolutional Neural Network for 
 3. Matplotlib
 4. Sklearn
 5. Keras
+6. Seaborn
+
+## Data
+I have used the Digit Recognizer competition's dataset in Kaggle. This is the link for it: https://www.kaggle.com/c/digit-recognizer
 
 ## Defining the Model
 I used the Keras Sequential API, where you have to just add one layer at a time, starting from the input.
@@ -27,5 +31,8 @@ Dropout is a regularization method, where a proportion of nodes in the layer are
 The Flatten layer is use to convert the final feature maps into a single 1D vector. This flattening step is needed so that you can make use of fully connected layers after some convolutional/maxpool layers. It combines all the found local features of the previous convolutional layers.
 
 In the end I passed these features into two fully-connected (Dense) layers which is just artificial neural networks (ANN) classifier. In the last layer(Dense(10,activation="softmax")) the net outputs distribution of probability of each class.
+
+## Outputs:
+Please go through the outputs file for that.
 
 Thank you!
