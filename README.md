@@ -7,6 +7,7 @@ This project consists of a 4 layers Sequential Convolutional Neural Network for 
 2. Numpy
 3. Matplotlib
 4. Sklearn
+5. Keras
 
 ## Defining the Model
 I used the Keras Sequential API, where you have to just add one layer at a time, starting from the input.
