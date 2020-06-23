@@ -33,6 +33,6 @@ The Flatten layer is use to convert the final feature maps into a single 1D vect
 In the end I passed these features into two fully-connected (Dense) layers which is just artificial neural networks (ANN) classifier. In the last layer(Dense(10,activation="softmax")) the net outputs distribution of probability of each class.
 
 ## Outputs:
-Please go through the outputs file for that.
+Please go through my kaggle link for that. I am sharing it again here: https://www.kaggle.com/saisamyukta/introduction-to-cnn-using-keras-0-99
 
 Thank you!
