@@ -18,7 +18,7 @@ from keras.callbacks import ReduceLROnPlateau
 
 sns.set(style='white', context='notebook', palette='deep')
 
-# Importing data from csv files:
+# Importing data from kaggle digit recogniser csv files:
 # 1. train.csv : The training data set, has 785 columns. The first column, called "label", is the digit that was drawn by the user. The rest of the columns contain the pixel-values of the associated image.
 # 2. test.csv: The test data set, (test.csv), is the same as the training set, except that it does not contain the "label" column.
 
@@ -40,12 +40,15 @@ g = sns.countplot(Y_train)
 X_train.isnull().any().describe()
 test.isnull().any().describe()
 
+#normalisation
+#CNNs conerge faster on [0..1] data rather than [0..255]
 X_train = X_train / 255.0
 test = test / 255.0
 
 # Observe the data
 X_train.head
 
+#train images have been stocked as a 1D vector of 784 i.e., 28x28
 # Reshape image in 3 dimensions (height = 28px, width = 28px , canal = 1 (as it is gray scale))
 X_train = X_train.values.reshape(-1,28,28,1)
 test = test.values.reshape(-1,28,28,1)
