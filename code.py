@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-import seaborn as sns
 %matplotlib inline
 
 np.random.seed(2)
@@ -15,8 +14,6 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D
 from keras.optimizers import RMSprop
 from keras.callbacks import ReduceLROnPlateau
-
-sns.set(style='white', context='notebook', palette='deep')
 
 # Importing data from kaggle digit recogniser csv files:
 # 1. train.csv : The training data set, has 785 columns. The first column, called "label", is the digit that was drawn by the user. The rest of the columns contain the pixel-values of the associated image.
